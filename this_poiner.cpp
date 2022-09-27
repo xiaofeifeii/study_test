@@ -60,5 +60,7 @@ main()
     pt1.print();
     pt1.MovePoint(2, 2);
     pt1.print();
+
+    printf("end\n");
     return 0;
 }
