@@ -36,7 +36,8 @@ int main()
     b.print();
     cout << "base part of b is ";
     b.Base::print();
-    int n = 0;
+    int n = 0;  
+    
 a:
     printf("ha ");
     n++;
