@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
     pTest->fun();
     delete pTest;
 
-    Circle a(10.5);
+    // Circle a(10.5);
      
     return 0;
 }
