@@ -48,7 +48,7 @@ void work(man *a)
 {
     if (a->get_age() >= 20)
     {
-        cout << a->get_name() << "可以胜任这份工作" << endl;
+        cout << a->get_name() << "可以胜任这份工作1" << endl;
     }
     else
     {
@@ -60,17 +60,16 @@ void work(man *a)
 void work(man &a)
 {
     if (a.get_age() >= 20)
-        cout << a.get_name() << "可以胜任这份工作" << endl;
+        cout << a.get_name() << "可以胜任这份工作2" << endl;
     else
         cout << a.get_name() << "不可以胜任这份工作" << endl;
     a.print();
 }
 
-
 int main(int argc, char const *argv[])
 {
     int n;
-    man i(23, "Bob");
+    man i(21, "Bob");
     superman j(32, "yyf", 100);
     work(i);
     work(&j);
