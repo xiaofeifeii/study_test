@@ -43,7 +43,7 @@ private:
     int x, y;
 };
 
-main()
+int main()
 {
     Data a, *p = &a;
     string Data::*ps = &Data::content;

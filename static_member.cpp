@@ -60,8 +60,7 @@ int main()
     test::num = 20;
     cout << test::num << endl;
     cout << test::Getnum() << endl;
-    cout << a.Getnum() << endl
-         << endl;
+    cout << a.Getnum() << endl << endl;
 
     CTest a1, b2, c3;
     CTest *p = new CTest;
