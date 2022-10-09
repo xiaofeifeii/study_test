@@ -49,7 +49,12 @@ int main(int argc, char const *argv[])
     pTest->fun();
     delete pTest;
 
-    // Circle a(10.5);
-     
+    Circle cir(10.5);
+    Cylinder b(5.0, 10.0);
+    cout << "a.area=" << cir.area() << "," << "a.volum=" << cir.volumn() << endl;
+    Sharp *pb;
+    pb = &b;
+    cout << "b.area=" << pb->area() << "," << "pb.volum=" << pb->volumn() << endl;
+
     return 0;
 }
