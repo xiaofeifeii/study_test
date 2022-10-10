@@ -18,8 +18,8 @@ public:
 class Sharp
 {
 public:
-    virtual double area() = 0;  //纯虚函数
-    virtual double volum() = 0; //纯虚函数
+    virtual double area() = 0;   //纯虚函数
+    virtual double volumn() = 0; //纯虚函数
 };
 
 class Circle : public Sharp
@@ -37,6 +37,7 @@ class Cylinder : public Circle
 {
 private:
     double h;
+
 public:
     Cylinder(double a, double b) : Circle(a), h(b) {}
     virtual double volumn() { return area() * h; }
@@ -49,7 +50,11 @@ int main(int argc, char const *argv[])
     pTest->fun();
     delete pTest;
 
-    // Circle a(10.5);
-     
+    Circle b(6);
+    Cylinder a(10.1, 1000);
+
+    cout << "area:" << a.area() << " volumn:" << a.volumn() << endl;
+    cout << "b area:" << b.area() << " b volumn:" << b.volumn() << endl;
+
     return 0;
 }
