@@ -50,11 +50,7 @@ int main(int argc, char const *argv[])
     pTest->fun();
     delete pTest;
 
-    Circle b(6);
-    Cylinder a(10.1, 1000);
-
-    cout << "area:" << a.area() << " volumn:" << a.volumn() << endl;
-    cout << "b area:" << b.area() << " b volumn:" << b.volumn() << endl;
-
+    // Circle a(10.5);
+     
     return 0;
 }
