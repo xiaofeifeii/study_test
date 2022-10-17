@@ -48,10 +48,11 @@ void display(Base *p)
     p->print();
 }
 
-template <class T> void swap1(T &a, T &b)
+template <typename T>
+void swap1(T &a, T &b)
 {
 
-    // cout << "a=" << a << "b=" << b << endl;
+    cout << "a=" << a << "b=" << b << endl;
     T t;
     t = a;
     a = b;
@@ -63,7 +64,6 @@ template <class T> void swap1(T &a, T &b)
 int main(int argc, char const *argv[])
 {
 
-    
     Derived d;
     Derived2 d2;
     Derived3 d3;
@@ -80,14 +80,13 @@ int main(int argc, char const *argv[])
     display(&d5);
     display(&d6);
 
-    // int x1 = 1;
-    // int y1 = 2;
-    
-
     float x1 = 1.05;
     float y1 = 2.01;
-    
     swap1<float>(x1, y1);
-    cout << "x1=" << x1 << "y1=" << y1 << endl;
+    cout << "x1=" << x1 <<' '<< "y1=" << y1 << endl;
+    int x2 = 1;
+    int y2 = 2;
+    swap1<int>(x2, y2);
+    cout << "x2=" << x2 <<' '<< "y2=" << y2 << endl;
     return 0;
 }
