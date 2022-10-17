@@ -65,6 +65,7 @@ void test()
         }
         else
         {
+            cout << endl;
             break;
         }
     }
@@ -78,11 +79,13 @@ int main(int argc, char *argv[])
     tt.join();
 
     thread test_thread(test);
-    test_thread.join();
+    // test_thread.join();
 
     thread yy(thread_two, 88, ref(str)); //这里要注意是以引用的方式调用参数
-    yy.detach();
+    // yy.detach();
+    yy.join();
 
+    _sleep(2 * 1000);
     // system("pause");
     return 0;
 }
